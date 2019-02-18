@@ -1,0 +1,16 @@
+.text-muted {
+  color: blue;
+}
+.danger-zone {
+  color: red;
+  font-style: bold;
+}
+.option {
+  margin: 15px;
+}
+
+body {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
