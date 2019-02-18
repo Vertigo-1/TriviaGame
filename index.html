@@ -9,20 +9,21 @@
 
     <title>Trivia Game</title>
 
-    <!-- Loading latest bootstrap and local css file -->
+    <!-- Loading latest bootstrap, local css file and GOOGLE Font! -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
   </head>
 
-  <body background= "./assets/images/QPhysics.jpg">   
-    <div class="container">
-      <div class="header text-center clearfix">
-        <h1 class="text-muted">Quantum Physics Trivia</h1>
-      </div>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+  <body background= "https://img.purch.com/h/1400/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwMi83NTMvb3JpZ2luYWwvc2hhcGUtb2YtYS13b3JtaG9sZQ=="> 
+    <!--had to get the container centered with the viewport-->  
+    <div class="container h-100 d-flex">
+      <div class="jumbotron jumbotron-fluid my-auto">
+        <div class="container" style="padding-left: 30px; padding-right: 30px;">
         <div id="game">
-          <h2>Quantum Physics Trivia</h2>
+          <h1><u>Quantum Physics Trivia</u></h1>
+          </br>
+          <h2 id="TriviaInfo">You have 15 seconds per question. Press the 'Start Game' button below to begin.  Good luck!</h2>
           <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
           <p id="question" class="lead"></p>
         </div>
@@ -30,7 +31,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div>
         <div id="choices" class="text-center">
           <button id="start" class="btn btn-info btn-lg">Start Game</button>
           <div id="options">
@@ -43,10 +44,10 @@
     </div>
 
     <!-- jQuery CDN-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- App JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <script src="./assets/javascript/app.js"></script>  
 
   </body>

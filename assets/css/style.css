@@ -1,9 +1,6 @@
-.text-muted {
-  color: blue;
-}
 .danger-zone {
   color: red;
-  font-style: bold;
+  font-weight: bold;
 }
 .option {
   margin: 15px;
@@ -13,4 +10,14 @@ body {
   position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100vh;
+  font-family: "Audiowide", cursive;
+}
+
+.jumbotron {
+  opacity: 0.8;
+}
+
+html,
+body {
+  height: 100%;
 }
